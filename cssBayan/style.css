@@ -25,8 +25,11 @@
     width: 100%;
     visibility: visible; 
 } 
-.wrapper:hover{
+.wrapper:hover{ 
     color: blue;
+}
+.meme-text:hover, .meme-img:hover{
+    cursor: pointer;
 }
 .meme-container:hover .meme-img{ 
     width: 100%;
@@ -58,4 +61,22 @@ input:checked ~.meme-img{
         min-height: 1.2rem;
 
     }
+}
+
+@media (hover: none) {   
+    .meme-container:hover .meme-img{ 
+        width: inherit;
+        visibility: inherit; 
+        transition: inherit;
+    }
+    .meme-container:hover .meme-text{ 
+        color: inherit;
+    }
+    .meme-container:hover .plus-button{ 
+        transform: inherit;
+    }
+    .wrapper:hover .plus-button{  
+        visibility: inherit; 
+        transition: inherit;
+    }  
 }
