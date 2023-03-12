@@ -6,6 +6,7 @@
     font-weight: bold;
 }
 .meme-container{
+    border-top: 0.05rem solid #000;
     align-items: center;
 }
 .meme-text{
@@ -19,11 +20,11 @@
 .plus-button{
     visibility: hidden;
 
-}
+} 
 .first-meme{
     width: 100%;
     visibility: visible; 
-}
+} 
 .wrapper:hover{
     color: blue;
 }
@@ -41,4 +42,8 @@
 .wrapper:hover .plus-button{  
     visibility: visible; 
     transition: all 0.5s ease;
-} 
+}  
+input:checked ~.meme-img{ 
+    width: 100%;
+    visibility: visible;  
+}
