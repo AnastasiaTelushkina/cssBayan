@@ -1,8 +1,8 @@
 .wrapper{ 
     font-family: 'Roboto Slab', serif;
-    width: 40%;
+    width: 50%;
     margin: 0 auto;
-    font-size: 2em;
+    font-size: 3em;
     font-weight: bold;
 }
 .meme-container{
@@ -25,8 +25,11 @@
     width: 100%;
     visibility: visible; 
 } 
-.wrapper:hover{
+.wrapper:hover{ 
     color: blue;
+}
+.meme-text:hover, .meme-img:hover{
+    cursor: pointer;
 }
 .meme-container:hover .meme-img{ 
     width: 100%;
@@ -46,4 +49,38 @@
 input:checked ~.meme-img{ 
     width: 100%;
     visibility: visible;  
+}
+
+@media screen and (min-width :568px)  and  (max-width: 820px) {
+    .wrapper {
+        width: 100%;  
+        font-size: 2.5em; 
+    } 
+ 
+}
+
+@media screen and (max-width: 567.99px) {
+    .wrapper {
+        width: 100%;  
+        font-size: 2em; 
+    } 
+ 
+}
+
+@media (hover: none) {   
+    .meme-container:hover .meme-img{ 
+        width: inherit;
+        visibility: inherit; 
+        transition: inherit;
+    }
+    .meme-container:hover .meme-text{ 
+        color: inherit;
+    }
+    .meme-container:hover .plus-button{ 
+        transform: inherit;
+    }
+    .wrapper:hover .plus-button{  
+        visibility: inherit; 
+        transition: inherit;
+    }  
 }
