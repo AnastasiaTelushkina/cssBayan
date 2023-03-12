@@ -1,0 +1,44 @@
+.wrapper{ 
+    font-family: 'Roboto Slab', serif;
+    width: 40%;
+    margin: 0 auto;
+    font-size: 2em;
+    font-weight: bold;
+}
+.meme-container{
+    align-items: center;
+}
+.meme-text{
+    display: flex;
+    justify-content: space-between;
+}
+.meme-img{ 
+    width: 0;
+    visibility: hidden;
+}
+.plus-button{
+    visibility: hidden;
+
+}
+.first-meme{
+    width: 100%;
+    visibility: visible; 
+}
+.wrapper:hover{
+    color: blue;
+}
+.meme-container:hover .meme-img{ 
+    width: 100%;
+    visibility: visible; 
+    transition: all 0.5s ease;
+}
+.meme-container:hover .meme-text{ 
+    color: black;
+}
+.meme-container:hover .plus-button{ 
+    transform: rotate(-45deg);
+}
+.wrapper:hover .plus-button{  
+    visibility: visible; 
+    transition: all 0.5s ease;
+} 
