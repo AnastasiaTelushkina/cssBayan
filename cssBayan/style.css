@@ -69,7 +69,7 @@ input:checked ~.meme-img{
 
 @media (hover: none) {   
     .meme-container:hover .meme-img{ 
-        width: inherit;
+        width: 100%;  
         visibility: inherit; 
         transition: inherit;
     }
