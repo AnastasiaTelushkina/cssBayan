@@ -66,6 +66,7 @@ input:checked ~.meme-img{
     } 
  
 }
+ 
 
 @media (hover: none) {   
     .meme-container:hover .meme-img{ 
